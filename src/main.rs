@@ -82,9 +82,12 @@ fn set_keys() -> (u64, u64, u64){
 
     //first part of private key
     let n = prime1 * prime2;
+    //totient value
     let fi: u64 = ((prime1 - 1) * (prime2 - 1)).into();
+    //primary key is relatively prime to totient value
     let mut e: u64 = 2; 
     loop {
+        //greatest common divisor
         if gcd::binary_u64(e,fi) == 1 {
             break;
         }
@@ -92,6 +95,7 @@ fn set_keys() -> (u64, u64, u64){
     }
     let public_key: u64 = e;
     let mut d: u64 = 2;
+    //find private key i.e private key * public key / totient value must have value of 1
     loop {
         if (d*e) % fi == 1 {
             break;
