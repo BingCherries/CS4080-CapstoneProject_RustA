@@ -1,0 +1,27 @@
+[workspace]
+resolver = "2"
+members = [
+    "aes",
+    "aria",
+    "belt-block",
+    "blowfish",
+    "camellia",
+    "cast5",
+    "cast6",
+    "des",
+    "gift",
+    "idea",
+    "kuznyechik",
+    "magma",
+    "rc2",
+    "rc5",
+    "serpent",
+    "sm4",
+    "speck",
+    "twofish",
+    "threefish",
+    "xtea",
+]
+
+[profile.dev]
+opt-level = 2
