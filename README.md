@@ -1,5 +1,7 @@
 # Class: CS4080-CapstoneProject_RustA
 # Team: Rust A
+- Cody Apolinar, Kelvin Quizon, Thomas Christopher Tejedor, Yunseon Choi
+
 
 Reference: RustCrypto/block-ciphers (https://github.com/RustCrypto/block-ciphers)
 
